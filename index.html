@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" class="dark:bg-[url('sandbox:/mnt/data/image.png')] dark:bg-cover dark:bg-center dark:bg-fixed">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elegance Ballroom | Dance Journey</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@200;300;400;500&family=Great+Vibes&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class', // Enable dark mode based on the 'dark' class
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['"Cormorant Garamond"', 'serif'],
+              sans: ['"Montserrat"', 'sans-serif'],
+              script: ['"Great Vibes"', 'cursive'],
+            },
+            colors: {
+              gold: {
+                100: '#F9F1D8',
+                200: '#F0DEAA',
+                300: '#E6CB7D',
+                400: '#DDB853',
+                500: '#D4A52C', // Main Gold
+                600: '#AA8423',
+                700: '#80631B',
+              },
+              matte: {
+                black: '#1A1A1A',
+                dark: '#262626',
+                white: '#F0F0F3',
+                offwhite: '#E0E5EC',
+              }
+            },
+            boxShadow: {
+              'neu-flat': '9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px rgba(255,255,255, 0.5)',
+              'neu-pressed': 'inset 6px 6px 10px 0 rgba(163,177,198, 0.7), inset -6px -6px 10px 0 rgba(255,255,255, 0.8)',
+              'neu-dark-flat': '5px 5px 10px #0b0b0b, -5px -5px 10px #292929',
+              'neu-dark-pressed': 'inset 5px 5px 10px #0b0b0b, inset -5px -5px 10px #292929',
+              'neu-btn': '6px 6px 12px #b8b9be, -6px -6px 12px #ffffff',
+              'neu-btn-pressed': 'inset 4px 4px 8px #b8b9be, inset -4px -4px 8px #ffffff',
+              'neu-btn-dark': '6px 6px 12px #0e0e0e, -6px -6px 12px #262626',
+              'neu-btn-dark-pressed': 'inset 4px 4px 8px #0e0e0e, inset -4px -4px 8px #262626',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Custom scrollbar for an elegant feel */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+      }
+      .dark ::-webkit-scrollbar-track {
+        background: #000000; /* Black for dark mode */
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #D4A52C; /* Main Gold */
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #AA8423; /* Darker Gold */
+      }
+      .dark ::-webkit-scrollbar-thumb {
+        background: #AA8423; /* Darker Gold for dark mode */
+      }
+      .dark ::-webkit-scrollbar-thumb:hover {
+        background: #D4A52C; /* Main Gold for dark mode hover */
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.6",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="antialiased font-sans">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
